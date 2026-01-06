@@ -546,31 +546,16 @@ with tab2:
 
             st.markdown("---")
 
-            # Individual Recommendation Cards (nested)
+            # Individual Recommendation Cards (as styled list, not nested expanders)
             st.markdown(f"**Individual Recommendations ({len(pod_data)}):**")
             for _, row in pod_data.sort_values('fit_score', ascending=False).iterrows():
                 emoji = risk_emoji.get(row['risk_label'], '⚪')
-                with st.expander(
-                    f"{emoji} {row['vendor_name']} → {row['site_name']} ({row['category']}) | "
-                    f"Fit: {row['fit_score']} | NPV: ${row['npv_3y']:,.0f} | {row['quarter']}"
-                ):
-                    # Two-column layout
-                    c1, c2 = st.columns(2)
-                    with c1:
-                        st.markdown("**Model Prediction**")
-                        st.write(f"- Adoption Prob: {row['p_adoption']*100:.0f}%")
-                        st.write(f"- Fit Score: {row['fit_score']} ({row['fit_label']})")
-                        st.write(f"- Days A/R Impact: {row['days_ar_delta']:+.1f} days")
-                        st.write(f"- Integration: {['None', 'Partial', 'Full'][int(row['integration_quality'])]}")
-                        st.write(f"- Risk: {row['risk_label']}")
-                    with c2:
-                        st.markdown("**Business Value**")
-                        st.write(f"- Annual Cost Savings: ${row['annual_cost_savings']:,.0f}")
-                        st.write(f"- Annual A/R Value: ${row['annual_ar_value']:,.0f}")
-                        st.write(f"- Risk-Adj EV: ${row['ev_risk_adj']:,.0f}/yr")
-                        st.write(f"- 3Y NPV: ${row['npv_3y']:,.0f}")
-                        st.write(f"- Impl Cost: ${row['impl_cost']:,.0f}")
-                    st.caption(f"**Why:** {row['top_reason']}")
+                integration_level = ['None', 'Partial', 'Full'][int(row['integration_quality'])]
+
+                st.markdown(f"""
+{emoji} **{row['vendor_name']}** → {row['site_name']} ({row['category']}) | {row['quarter']}
+> Fit: **{row['fit_score']}** ({row['fit_label']}) | NPV: **${row['npv_3y']:,.0f}** | A/R: {row['days_ar_delta']:+.1f} days | Integration: {integration_level}
+                """)
 
 # ============================================================================
 # TAB 3: IMPLEMENTATION PLAN
