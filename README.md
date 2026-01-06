@@ -1,10 +1,12 @@
-![Header](https://capsule-render.vercel.app/api?type=rect&color=0D1B2A&height=100&text=PE%20Rollup%20Intelligence&fontSize=36&fontColor=A78BFA&fontAlign=50&fontAlignY=50)
+![Header](https://capsule-render.vercel.app/api?type=rect&color=0D1B2A&height=120&text=PE%20Rollup%20Intelligence%20Platform%20for%20EBITDA%20Lift&fontSize=28&fontColor=A78BFA&fontAlign=50&fontAlignY=50)
 
 <div align="center">
 
-**R-GCN for Private Equity Portfolio Optimization using Causal Synthetic Topologies**
+**R-GCN for Private Equity Vendor Consolidation**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=0D1B2A)](https://huggingface.co/spaces/ges257/pe-rollup-intelligence)
+[![Live Demo (Click Here)](https://img.shields.io/badge/Live_Demo_(Click_Here)-HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=0D1B2A)](https://huggingface.co/spaces/ges257/pe-rollup-intelligence)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-A78BFA?style=for-the-badge)](docs/PE_Rollup_Intelligence_Platform_for_EBITDA_Lift.pdf)
+
 ![Python](https://img.shields.io/badge/Python-3.11+-A3B8CC?style=flat-square&logo=python&logoColor=0D1B2A)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Geometric-A3B8CC?style=flat-square&logo=pytorch&logoColor=0D1B2A)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-A3B8CC?style=flat-square&logo=streamlit&logoColor=0D1B2A)
