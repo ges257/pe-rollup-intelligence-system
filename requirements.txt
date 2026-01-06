@@ -1,0 +1,23 @@
+# PE Rollup GNN - Requirements
+# Core ML
+torch>=2.0.0
+torch-geometric>=2.4.0
+torch-scatter
+torch-sparse
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Dashboard
+streamlit>=1.28.0
+plotly>=5.18.0
+
+# Utilities
+python-dateutil>=2.8.0
+tqdm>=4.65.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0
