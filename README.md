@@ -36,6 +36,20 @@ Private Equity rollups face a **vendor consolidation challenge**: when acquiring
 
 ---
 
+## Challenges Overcome
+
+| Challenge | Solution |
+|-----------|----------|
+| **R-GCN Underfitting** (PR-AUC 0.834) | Paper-based tuning + random search → 0.9407 |
+| **SAGEConv ignores edge types** (0.687) | Switched to R-GCN with relation-specific weights |
+| **TGN architecture mismatch** (0.557) | Abandoned temporal model for static R-GCN |
+| **Class imbalance** (85% negative) | Switched from accuracy to PR-AUC metric |
+| **Calibration drift** | Isotonic regression → ECE 0.0000 |
+
+> See [docs/methodology.md](docs/methodology.md) for full implementation details and debugging process.
+
+---
+
 ## Architecture
 
 ```
