@@ -5,7 +5,7 @@
 **R-GCN for Private Equity Vendor Consolidation**
 
 [![Live Demo (Click Here)](https://img.shields.io/badge/Live_Demo_(Click_Here)-HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=0D1B2A)](https://huggingface.co/spaces/ges257/pe-rollup-intelligence)
-[![Paper PDF](https://img.shields.io/badge/Paper-PDF-A78BFA?style=for-the-badge)](docs/PE_Rollup_Intelligence_Platform_for_EBITDA_Lift.pdf)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-A78BFA?style=for-the-badge)](https://drive.google.com/file/d/1e-PwltsbYohmsTXe1LqmhY2lEHoY02K-/view?usp=sharing)
 
 ![Python](https://img.shields.io/badge/Python-3.11+-A3B8CC?style=flat-square&logo=python&logoColor=0D1B2A)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Geometric-A3B8CC?style=flat-square&logo=pytorch&logoColor=0D1B2A)
