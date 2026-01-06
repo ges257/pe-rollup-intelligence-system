@@ -46,7 +46,7 @@ Private Equity rollups face a **vendor consolidation challenge**: when acquiring
 | **Class imbalance** (85% negative) | Switched from accuracy to PR-AUC metric |
 | **Calibration drift** | Isotonic regression → ECE 0.0000 |
 
-> See [docs/methodology.md](docs/methodology.md) for full implementation details and debugging process.
+> See [docs/challenges.md](docs/challenges.md) for full implementation details and debugging process.
 
 ---
 
